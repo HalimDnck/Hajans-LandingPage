@@ -85,4 +85,103 @@ main{
          }
       }
    }
+
+   .left-section{
+      width: 70%;
+      height: 100%;
+      padding-top: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .product-content{
+         padding: 0 50px;
+         width: 70%;
+         height: 100%;
+         .features{
+            .size-form{
+               .select-size{
+                  display: flex;
+                  gap: 10px;
+                  input{
+                     display: none;
+                  }
+                   
+                  label {
+                     display: inline-block;
+                     width: 40px;
+                     height: 40px;
+                     border-radius: 50%;
+                     text-align: center;
+                     border: 1px solid #ddd;
+                     line-height: 40px;
+                     cursor: pointer
+                  }
+                   
+                   #size1:checked ~ label[for="size1"],
+                   #size2:checked ~ label[for="size2"],
+                   #size3:checked ~ label[for="size3"],
+                   #size4:checked ~ label[for="size4"],
+                   #size5:checked ~ label[for="size5"],
+                   #size6:checked ~ label[for="size6"],
+                   #size7:checked ~ label[for="size7"],
+                   #size8:checked ~ label[for="size8"] {
+                     background: black;
+                     color: white;
+                  }
+               }
+            }
+      
+            .buy-options{
+               display: flex;
+               gap: 20px;
+
+               button{cursor: pointer;}
+               .add-to-card{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 5px;
+                  width: 250px;
+                  height: 50px;
+                  background: black;
+      
+                  border-radius: 20px;
+                  border: none;
+                  color: white;
+                  font-size: 18px;
+      
+                  img{
+                     width: 18px;
+                     padding-bottom: 3px;
+                     filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(181deg) brightness(104%) contrast(101%);
+                  }
+               }
+               .add-to-fav{
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 20px;
+                  border: 1px solid black;
+                  background: none;
+                  img{
+                     width: 20px;
+                  }
+               }
+            }
+         }
+      }
+      
+       
+       
+       
+       
+   }
+   .right-section{
+      width: 30%;
+      height: 100vh;
+      background: url('../images/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
 }

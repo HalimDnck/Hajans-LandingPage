@@ -72,4 +72,88 @@ main header .header-icons li button {
 }
 main header .header-icons li button img {
   width: 30px;
+}
+main .left-section {
+  width: 70%;
+  height: 100%;
+  padding-top: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .left-section .product-content {
+  padding: 0 50px;
+  width: 70%;
+  height: 100%;
+}
+main .left-section .product-content .features .size-form .select-size {
+  display: flex;
+  gap: 10px;
+}
+main .left-section .product-content .features .size-form .select-size input {
+  display: none;
+}
+main .left-section .product-content .features .size-form .select-size label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #ddd;
+  line-height: 40px;
+  cursor: pointer;
+}
+main .left-section .product-content .features .size-form .select-size #size1:checked ~ label[for=size1],
+main .left-section .product-content .features .size-form .select-size #size2:checked ~ label[for=size2],
+main .left-section .product-content .features .size-form .select-size #size3:checked ~ label[for=size3],
+main .left-section .product-content .features .size-form .select-size #size4:checked ~ label[for=size4],
+main .left-section .product-content .features .size-form .select-size #size5:checked ~ label[for=size5],
+main .left-section .product-content .features .size-form .select-size #size6:checked ~ label[for=size6],
+main .left-section .product-content .features .size-form .select-size #size7:checked ~ label[for=size7],
+main .left-section .product-content .features .size-form .select-size #size8:checked ~ label[for=size8] {
+  background: black;
+  color: white;
+}
+main .left-section .product-content .features .buy-options {
+  display: flex;
+  gap: 20px;
+}
+main .left-section .product-content .features .buy-options button {
+  cursor: pointer;
+}
+main .left-section .product-content .features .buy-options .add-to-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 250px;
+  height: 50px;
+  background: black;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+main .left-section .product-content .features .buy-options .add-to-card img {
+  width: 18px;
+  padding-bottom: 3px;
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(181deg) brightness(104%) contrast(101%);
+}
+main .left-section .product-content .features .buy-options .add-to-fav {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: none;
+}
+main .left-section .product-content .features .buy-options .add-to-fav img {
+  width: 20px;
+}
+main .right-section {
+  width: 30%;
+  height: 100vh;
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
