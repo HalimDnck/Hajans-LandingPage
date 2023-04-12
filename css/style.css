@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main header {
+  width: 100%;
+  height: 10vh;
+  padding: 25px 70px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+main header .header-logo {
+  width: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+main header .header-logo img {
+  width: 150px;
+}
+main header .header-menu {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main header .header-menu li a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+main header .header-menu li a:hover {
+  font-size: 24px;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+main header .header-menu li .active-menu-item {
+  font-size: 24px;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+main header .header-icons {
+  width: 8%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main header .header-icons li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+main header .header-icons li button img {
+  width: 30px;
+}/*# sourceMappingURL=style.css.map */
