@@ -90,7 +90,7 @@ main .left-section {
   justify-content: flex-start;
 }
 main .left-section .product-content {
-  padding: 0 50px;
+  padding: 0 40px;
   width: 70%;
 }
 main .left-section .product-content .features {
@@ -214,6 +214,8 @@ main .left-section .product-content .fashion-details {
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 main .left-section .product-content .fashion-details h2 {
   font-size: 48px;
@@ -226,7 +228,7 @@ main .left-section .product-content .fashion-details q {
 main .left-section .product-content .fashion-details .design-text {
   padding-top: 30px;
   font-size: 20px;
-  text-align: left;
+  text-align: justify;
 }
 main .left-section .product-content .fashion-details .designer {
   padding-top: 20px;
