@@ -31,7 +31,7 @@ main header .header-logo {
   justify-content: flex-start;
 }
 main header .header-logo img {
-  width: 150px;
+  width: 100px;
 }
 main header .header-menu {
   width: 50%;
@@ -45,17 +45,17 @@ main header .header-menu li a {
   text-underline-offset: 2px;
   text-transform: uppercase;
   color: black;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   transition: all 0.5s;
 }
 main header .header-menu li a:hover {
-  font-size: 24px;
+  font-size: 20px;
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
 }
 main header .header-menu li .active-menu-item {
-  font-size: 24px;
+  font-size: 20px;
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
 }
@@ -67,17 +67,23 @@ main header .header-icons {
   align-items: center;
 }
 main header .header-icons li button {
-  background: none;
+  background: beige;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   cursor: pointer;
 }
 main header .header-icons li button img {
-  width: 30px;
+  width: 20px;
 }
 main .left-section {
   width: 70%;
   height: 100%;
-  padding: 250px 100px;
+  padding: 200px 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -149,7 +155,7 @@ main .left-section .product-content .features .color-container {
   padding-right: 0px;
   gap: 10px;
 }
-main .left-section .product-content .features .color-container button {
+main .left-section .product-content .features .color-container a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -204,77 +210,110 @@ main .left-section .product-content .features .buy-options .add-to-fav {
 main .left-section .product-content .features .buy-options .add-to-fav img {
   width: 20px;
 }
+main .left-section .product-content .fashion-details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+main .left-section .product-content .fashion-details h2 {
+  font-size: 48px;
+}
+main .left-section .product-content .fashion-details q {
+  font-size: 24px;
+  font-style: italic;
+  opacity: 0.6;
+}
+main .left-section .product-content .fashion-details .design-text {
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: left;
+}
+main .left-section .product-content .fashion-details .designer {
+  padding-top: 20px;
+  font-size: 18px;
+}
+main .left-section .product-content .fashion-details .designer strong {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+main .left-section .product-content .reviews {
+  display: flex;
+  flex-direction: column;
+}
+main .left-section .product-content .reviews .revs {
+  padding-top: 10px;
+}
+main .left-section .product-content .reviews .revs .infos {
+  display: flex;
+  justify-content: space-between;
+}
+main .left-section .product-content .reviews .revs .infos .stars ul {
+  display: flex;
+  list-style: none;
+  color: orange;
+}
+main .left-section .product-content .reviews .revs .infos .username {
+  font-size: 18px;
+  font-style: italic;
+}
+main .left-section .product-content .reviews .revs .comment {
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+main .left-section .product-content .reviews .revs hr {
+  margin-top: 20px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 main .left-section .product-pages {
   display: flex;
   gap: 20px;
   padding: 0 50px;
   width: 70%;
   margin-bottom: 10px;
+  transition: all 1s;
   position: fixed;
   bottom: 0;
 }
 main .left-section .product-pages button {
   cursor: pointer;
 }
-main .left-section .product-pages .emptyPage {
-  width: 50px;
+main .left-section .product-pages button {
+  width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
   background: none;
+  border: 1px solid black;
   border-radius: 20px;
-  transition: all 0.5s;
+  transition: all 0.5;
 }
-main .left-section .product-pages .emptyPage p {
+main .left-section .product-pages button p {
   display: none;
 }
-main .left-section .product-pages .emptyPage img {
-  width: 22px;
-}
-main .left-section .product-pages .emptyPage:hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 40px;
-  border: 1px solid black;
-  background: none;
-  gap: 5px;
-  border-radius: 20px;
-  font-size: 18px;
-}
-main .left-section .product-pages .emptyPage:hover p {
-  opacity: 1;
-  position: static;
-  display: block;
-}
-main .left-section .product-pages .emptyPage:hover img {
-  padding-bottom: 3px;
+main .left-section .product-pages button img {
+  width: 20px;
 }
 main .left-section .product-pages .activePage {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 40px;
-  border: 1px solid black;
-  background: none;
   gap: 5px;
-  border-radius: 20px;
-  font-size: 18px;
+  width: 250px;
+  transition: all 0.5;
 }
-main .left-section .product-pages .activePage img {
-  padding-bottom: 3px;
-  width: 22px;
+main .left-section .product-pages .activePage p {
+  display: block;
+  font-size: 16px;
+  padding-top: 3px;
 }
 main .right-section {
   position: fixed;
   right: 0;
   width: 30%;
   height: 100vh;
-  background: url("../images/bg.jpg");
+  background: url("../images/bg2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

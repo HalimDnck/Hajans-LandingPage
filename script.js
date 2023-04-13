@@ -31,4 +31,4 @@ imageBtn3.addEventListener("click", function(){
    imageBtn1.style.border = "none"
 })
 
-//Color options
+
