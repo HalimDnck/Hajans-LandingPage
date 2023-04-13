@@ -39,7 +39,7 @@
                <p class="product-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique, praesentium dolores obcaecati cum quo officiis. At vero aspernatur adipisci excepturi optio. Atque, neque eveniet aspernatur saepe reprehenderit quia accusamus.</p>
 
                <div class="size-form">
-                  <p>Select Size (EU)</p>
+                  <p class="size-capt">Select Size (EU)</p>
                   <div class="select-size">
                      <input type="radio" name="s-size" id="size1" checked/>
                      <input type="radio" name="s-size" id="size2" />
@@ -62,6 +62,12 @@
                    </div>
                </div>
 
+               <div class="color-container">
+                  <button class="color-btn silver active"></button>
+                  <button class="color-btn lime"></button>
+                  <button class="color-btn black"></button>
+               </div>
+
                <div class="buy-options">
                   <button class="add-to-card">
                      Add to Card
@@ -79,14 +85,43 @@
          </div>
 
          <div class="product-pages">
-            <button class="feature-btn"></button>
-            <button class="fashion-btn"></button>
-            <button class="review-btn"></button>
+            <button class="feature-btn activePage">
+               <img src="icons/shopping-bag.png" alt="bag icon">
+               <p class="feature-text">Features</p>
+            </button>
+
+            <button class="fashion-btn emptyPage">
+               <img src="icons/needle.png" alt="design icon">
+               <p class="feature-text">Design</p>
+            </button>
+
+            <button class="review-btn emptyPage">
+               <img src="icons/star.png" alt="star icon">
+               <p class="feature-text">Reviews</p>
+            </button>
          </div>
       </section>
 
       <section class="right-section">
-         <h1>right</h1>
+         <div class="image-container">
+            <img class="product-image" id="image" src="images/1_silver.png" alt="fwd shoe">
+         </div>
+
+         <div class="image-gallery">
+            <button class="smallImg1 activeS1" id="s1">
+               <img src="images/1_silver.png" alt="">
+            </button>
+            <button class="smallImg2" id="s2">
+               <img src="images/2_silver.png" alt="">
+            </button>
+            <button class="smallImg3" id="s3">
+               <img src="images/3_silver.png" alt="">
+            </button>
+         </div>
+
+         
+
+         
       </section>
    </main>
 
